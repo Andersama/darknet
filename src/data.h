@@ -96,6 +96,7 @@ data load_data_augment(char **paths, int n, int m, char **labels, int k, tree *h
 data load_go(char *filename);
 
 box_label *read_boxes(char *filename, int *n);
+box_label* read_boxes_cxx(char* filename, int* n, char** labels, int classes);
 data load_cifar10_data(char *filename);
 data load_all_cifar10();
 
