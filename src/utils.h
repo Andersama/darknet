@@ -48,6 +48,7 @@ int read_all_fail(int fd, char *buffer, size_t bytes);
 int write_all_fail(int fd, char *buffer, size_t bytes);
 LIB_API void find_replace(const char* str, char* orig, char* rep, char* output);
 void replace_image_to_label(const char* input_path, char* output_path);
+void replace_image_to_label_cxx(const char* input_path, char* output_path);
 void malloc_error(const size_t size, const char * const filename, const char * const funcname, const int line);
 void calloc_error(const size_t size, const char * const filename, const char * const funcname, const int line);
 void realloc_error(const size_t size, const char * const filename, const char * const funcname, const int line);
